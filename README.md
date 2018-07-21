@@ -21,6 +21,10 @@
 
 ![](images/victoryscreen.jpg)
 
+## Demo
+5 минут поиграть принесёт пользу)
+**[Запустить демо!](https://nshaikhinurov.github.io/BattleShip/)**
+
 ## Автор
 
 **Наиль Шайхинуров** — n.shaikhinurov@gmail.com
