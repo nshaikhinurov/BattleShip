@@ -1,0 +1,147 @@
+body {
+  width: 100vw;
+  height: 1px;
+  /* Требуется, чтобы дочерний блок взял высоту 100% */
+  min-height: 100vh;
+  margin: 0;
+  padding: 1em;
+  background-color: #eee;
+  box-sizing: border-box;
+  font-size: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #333;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field-containers {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.field-container {
+  font-size: 0.5em;
+  margin-top: 1em;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.field {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  /* border: 5px solid #00006b; */
+}
+
+.cell {
+  border-bottom: 1px solid #00006b;
+  border-right: 1px solid #00006b;
+  background-color: #ddd;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.field-cell {
+  font-size: 0.5em;
+  color: #eee;
+}
+
+.empty {
+  background-color: #339af0;
+}
+
+.ship {
+  background-color: #01295F; // cool black
+}
+
+.ship-hit {
+  font-size: 1.5em;
+  background-color: #FFB30F; // dark tangerine
+}
+
+.ship-sunk {
+  background-color: #FD151B; // vivid red
+}
+
+.label {
+  background: transparent;
+  border: none;
+}
+
+.col-heading {
+  border-bottom: 1px solid #00006b;
+}
+
+.row-heading {
+  border-right: 1px solid #00006b;
+}
+
+.player-info {
+  margin-top: 1em;
+}
+
+.waiting-icon {
+  color: #FD151B;
+}
+
+.turn-icon {
+  color: #0eff00;
+}
+
+.win {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.game-result {
+  font-size: 2em;
+}
+
+.emoji {
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+.button {
+  border-radius: 0.1em;
+  background-color: #0eff00;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.75em 2em;
+  display: inline-block;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+footer {
+  font-size: 0.5em;
+  margin-top: 1em;
+}
